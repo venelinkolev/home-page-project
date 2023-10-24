@@ -1,0 +1,76 @@
+.header-section {
+  display: flex;
+  background: white;
+  justify-content: space-between;
+  padding: 1.5em 3em;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.logo img {
+  display: block;
+  height: 35px;
+}
+
+.logo h2 {
+  color: rgb(27, 0, 87);
+}
+
+.nav-bar {
+  display: flex;
+  gap: 1em;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar li,
+.nav-bar a {
+  display: block;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  color: rgb(27, 0, 87);
+  margin: 1em;
+  font-size: 1.2rem;
+  line-height: 0.9em;
+  font-weight: 400;
+  border: solid white;
+  border-width: 0 0 2px 0;
+  transition: border 0.3s ease-in-out;
+}
+
+.nav-bar a:hover {
+  border-color: rgb(27, 0, 87);
+}
+
+.profil {
+  display: flex;
+  align-items: center;
+}
+
+.profil svg:hover {
+  border-color: rgb(27, 0, 87);
+}
+
+.profil span {
+  display: none;
+}
+
+.profil svg {
+  cursor: pointer;
+  fill: rgb(27, 0, 87);
+  height: 2.2em;
+  border: 2px solid white;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  padding: 2px;
+  transition: border 0.3s ease-in-out;
+}

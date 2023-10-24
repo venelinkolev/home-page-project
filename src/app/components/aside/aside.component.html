@@ -1,0 +1,194 @@
+<div class="aside-section">
+  <nav>
+    <ul>
+      <li>
+        <div class="line dashboard">
+          <div class="name">
+            <i>#</i>
+            <p>Начален екран</p>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="line">
+          <div class="name" #mainOperation (click)="openMenu(mainOperation)">
+            <i>#</i>
+            <p>Основни операции</p>
+          </div>
+          <div class="icon">
+            <i class="caret-down"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -100 320 512">
+                <path
+                  d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+              </svg></i>
+            <i class="caret-up"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -150 320 512">
+                <path
+                  d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z" />
+              </svg></i>
+          </div>
+        </div>
+        <ul class="subMenu" style="display: none;">
+          <li><a href="#">Продажби</a></li>
+          <li><a href="#">Фактуриране</a></li>
+          <li><a href="#">Изпълняване на поръки</a></li>
+          <li><a href="#">Доставки</a></li>
+          <li><a href="#">Ревизия</a></li>
+          <li><a href="#">Логистика</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="line">
+          <div class="name" #nomenclature (click)="openMenu(nomenclature)">
+            <i>#</i>
+            <p>Номенклатура</p>
+          </div>
+          <div class="icon">
+            <i class="caret-down"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -100 320 512">
+                <path
+                  d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+              </svg></i>
+            <i class="caret-up"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -150 320 512">
+                <path
+                  d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z" />
+              </svg></i>
+          </div>
+        </div>
+        <ul class="subMenu" style="display: none;">
+          <li><a href="#">Стоки</a></li>
+          <li><a href="#">Контрагенти</a></li>
+          <li><a href="#">Е-МЕНЮ.</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="line">
+          <div class="name" #financialOperations (click)="openMenu(financialOperations)">
+            <i>#</i>
+            <p>Финансови операции</p>
+          </div>
+          <div class="icon">
+            <i class="caret-down"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -100 320 512">
+                <path
+                  d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+              </svg></i>
+            <i class="caret-up"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -150 320 512">
+                <path
+                  d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z" />
+              </svg></i>
+          </div>
+        </div>
+        <ul class="subMenu" style="display: none;">
+          <li><a href="#">Абонамент</a></li>
+          <li><a href="#">Отчитане на оборот</a></li>
+          <li><a href="#">Неизплатени документ</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="line">
+          <div class="name" #reference (click)="openMenu(reference)">
+            <i>#</i>
+            <p>Справки</p>
+          </div>
+          <div class="icon">
+            <i class="caret-down"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -100 320 512">
+                <path
+                  d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z" />
+              </svg></i>
+            <i class="caret-up"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -150 320 512">
+                <path
+                  d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z" />
+              </svg></i>
+          </div>
+        </div>
+        <ul class="subMenu" style="display: none;">
+          <li><a href="#">Документи от продажби</a></li>
+          <li><a href="#">Поръчки от клиенти</a></li>
+          <li><a href="#">Издадени фактури</a></li>
+          <li><a href="#">Сума в касите</a></li>
+          <li><a href="#">Касова книга</a></li>
+          <li><a href="#">Оборот по оператори</a></li>
+          <li><a href="#">Оборот по работни места</a></li>
+          <li><a href="#">Наблюдение на продажбите</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Old Version -->
+
+  <!-- <div class="aside-nav">
+    <nav>
+      <ul>
+        <li>
+          <a class="dashboard" href="#">Начален екран</a>
+        </li>
+        <li>
+          <a href="#"
+            >Основни операции
+            <span *ngIf="true"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -100 320 512">
+                <path
+                  d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"
+                /></svg
+            ></span>
+            <span *ngIf="false"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -150 320 512">
+                <path
+                  d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"
+                /></svg
+            ></span>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            >Номенклатура
+            <span *ngIf="true"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -100 320 512">
+                <path
+                  d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"
+                /></svg
+            ></span>
+            <span *ngIf="false"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -150 320 512">
+                <path
+                  d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"
+                /></svg
+            ></span>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            >Финансови операции
+            <span *ngIf="true"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -100 320 512">
+                <path
+                  d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"
+                /></svg
+            ></span>
+            <span *ngIf="false"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -150 320 512">
+                <path
+                  d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"
+                /></svg
+            ></span>
+          </a>
+        </li>
+        <li>
+          <a href="#"
+            >Справки
+            <span *ngIf="true"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -100 320 512">
+                <path
+                  d="M137.4 374.6c12.5 12.5 32.8 12.5 45.3 0l128-128c9.2-9.2 11.9-22.9 6.9-34.9s-16.6-19.8-29.6-19.8L32 192c-12.9 0-24.6 7.8-29.6 19.8s-2.2 25.7 6.9 34.9l128 128z"
+                /></svg
+            ></span>
+            <span *ngIf="false"
+              ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -150 320 512">
+                <path
+                  d="M182.6 137.4c-12.5-12.5-32.8-12.5-45.3 0l-128 128c-9.2 9.2-11.9 22.9-6.9 34.9s16.6 19.8 29.6 19.8H288c12.9 0 24.6-7.8 29.6-19.8s2.2-25.7-6.9-34.9l-128-128z"
+                /></svg
+            ></span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div> -->
+</div>

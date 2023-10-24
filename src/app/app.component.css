@@ -1,0 +1,20 @@
+.site {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+
+.main-section {
+  display: flex;
+  height: 100%;
+}
+
+.main-section .routing-section {
+  background: rgb(221, 221, 228);
+  background: linear-gradient(180deg,
+      rgba(221, 221, 228, 1) 0%,
+      rgba(255, 255, 255, 1) 100%);
+  flex: 1 1 auto;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.3) inset;
+}
