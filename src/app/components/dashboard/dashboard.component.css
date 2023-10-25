@@ -1,14 +1,33 @@
 .container {
     display: flex;
     flex-direction: column;
-    gap: 2em;
     padding: 1em;
+}
+
+.container header h1 {
+    color: rgb(27, 0, 87);
+    padding: 0 1rem;
 }
 
 .card-container {
     display: flex;
+    margin: 1em;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-evenly;
+}
+
+.card-container .card {
+    flex: 0 1 20%;
 }
 
 .table {
     display: block;
+}
+
+.table header h2 {
+    margin-bottom: 0.5rem;
+    color: rgb(27, 0, 87);
+    padding-left: 1rem;
+    /* text-shadow: 1px 1px 2px rgb(27, 0, 87); */
 }

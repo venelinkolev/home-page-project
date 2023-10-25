@@ -1,6 +1,38 @@
 <div class="container">
-    <section class="card-container"></section>
+    <header>
+        <h1>Начален екран</h1>
+    </header>
+    <section class="card-container">
+        <div class="card">
+            <app-info-card [color]="'red'" [total]="'20'" [nameCard]="'Продажби'"></app-info-card>
+        </div>
+        <div class="card">
+            <app-info-card [color]="'blue'" [total]="'20'" [nameCard]="'Поръчки'"></app-info-card>
+
+        </div>
+        <div class="card">
+            <app-info-card [color]="'orange'" [total]="'20'" [nameCard]="'Оборот'"></app-info-card>
+        </div>
+        <div class="card">
+            <app-info-card [color]="'gray'" [total]="'20'" [nameCard]="'Сума в касите'"></app-info-card>
+        </div>
+        <div class="card">
+            <app-info-card [color]="'green'" [total]="'20'" [nameCard]="'Стокова наличност'"></app-info-card>
+        </div>
+        <div class="card">
+            <app-info-card [color]="'purple'" [total]="'20'" [nameCard]="'Продажби'"></app-info-card>
+        </div>
+        <div class="card">
+            <app-info-card [color]="'whiteblue'" [total]="'20'" [nameCard]="'Продажби'"></app-info-card>
+        </div>
+        <div class="card">
+            <app-info-card [color]="'brown'" [total]="'20'" [nameCard]="'Продажби'"></app-info-card>
+        </div>
+    </section>
     <section class="table">
+        <header>
+            <h2>Документи от продажби</h2>
+        </header>
         <app-main-table [dataSource]="dataSource"></app-main-table>
     </section>
 </div>

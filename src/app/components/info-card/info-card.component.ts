@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-info-card',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./info-card.component.css']
 })
 export class InfoCardComponent {
-
+  @Input() color: string = '';
+  @Input() total: string = '';
+  @Input() nameCard: string = '';
 }
