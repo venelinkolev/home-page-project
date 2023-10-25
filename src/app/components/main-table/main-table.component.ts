@@ -8,7 +8,8 @@ import {
 } from '@angular/core';
 import { MatSort } from '@angular/material/sort';
 import { MatTableDataSource } from '@angular/material/table';
-import { UserData } from 'src/app/feature/document/document.component';
+import UserData from 'src/app/interfaces/user';
+
 
 @Component({
   selector: 'app-main-table',

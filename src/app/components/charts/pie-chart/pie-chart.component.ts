@@ -14,7 +14,16 @@ import DatalabelsPlugin from 'chartjs-plugin-datalabels';
   styleUrls: ['./pie-chart.component.css'],
 })
 export class PieChartComponent implements OnInit {
-  @Input() pieChartData!: ChartData<'pie', number[], string | string[]>;
+  // @Input() pieChartData!: ChartData<'pie', number[], string | string[]>;
+
+  pieChartData: ChartData<'pie', number[], string | string[]> = {
+    labels: ['Каса', 'Банка', 'Карта'],
+    datasets: [
+      {
+        data: [300.5, 500.6, 100.8],
+      },
+    ],
+  };
 
   @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
 
@@ -39,7 +48,7 @@ export class PieChartComponent implements OnInit {
   pieChartType: ChartType = 'pie';
   pieChartPlugins = [DatalabelsPlugin];
 
-  constructor() {}
+  constructor() { }
 
-  ngOnInit(): void {}
+  ngOnInit(): void { }
 }

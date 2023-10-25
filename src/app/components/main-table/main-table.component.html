@@ -1,9 +1,4 @@
-<table
-  mat-table
-  matSort
-  [dataSource]="dataSource"
-  class="mat-elevation-z8 main-table"
->
+<table mat-table matSort [dataSource]="dataSource" class="mat-elevation-z8 main-table">
   <ng-container matColumnDef="position">
     <th mat-header-cell *matHeaderCellDef rowspan="2" mat-sort-header>№</th>
     <td mat-cell *matCellDef="let document">{{ document?.position }}</td>
@@ -108,11 +103,7 @@
         <td mat-cell *matCellDef="let document"></td>
       </ng-container> -->
 
-  <tr
-    class="table-header"
-    mat-header-row
-    *matHeaderRowDef="displayedColumns; sticky: true"
-  ></tr>
+  <tr class="table-header" mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
 
   <!-- <tr
         class="table-header"

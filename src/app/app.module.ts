@@ -7,6 +7,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { AsideComponent } from './components/aside/aside.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { InfoCardComponent } from './components/info-card/info-card.component';
+import { MainTableComponent } from './components/main-table/main-table.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ChartsModule } from './components/charts/charts.module';
+import { MatTableModule } from '@angular/material/table';
 
 @NgModule({
   declarations: [
@@ -14,11 +18,15 @@ import { InfoCardComponent } from './components/info-card/info-card.component';
     HeaderComponent,
     AsideComponent,
     DashboardComponent,
-    InfoCardComponent
+    InfoCardComponent,
+    MainTableComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    ChartsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
