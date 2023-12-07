@@ -19,6 +19,13 @@
 
 .card-container .card {
     flex: 0 1 20%;
+    border-radius: 1em;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 0 1em 0 rgb(27, 0, 87, 0.4);
+
 }
 
 .table {
