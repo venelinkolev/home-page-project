@@ -38,3 +38,15 @@
     padding-left: 1rem;
     /* text-shadow: 1px 1px 2px rgb(27, 0, 87); */
 }
+
+@media (width < 600px) {
+
+    header h1,
+    header h2 {
+        text-align: center;
+    }
+
+    .card-container {
+        gap: 1em;
+    }
+}
