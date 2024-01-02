@@ -74,3 +74,38 @@
   padding: 2px;
   transition: border 0.3s ease-in-out;
 }
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu i {
+  display: flex;
+  align-items: center;
+}
+
+.mobile-menu i svg {
+  fill: rgb(27, 0, 87);
+}
+
+@media (width < 600px) {
+  .nav-bar {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .header-section {
+    padding: 1em 1.5em;
+  }
+
+  .logo h2 {
+    display: none;
+  }
+
+  .logo img {
+    height: 3.5em;
+  }
+}

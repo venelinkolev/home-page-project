@@ -1,7 +1,7 @@
 .aside-section {
   width: 18em;
   background: rgb(27, 0, 87);
-  height: 100%;
+  height: 100vh;
   padding-top: 1em;
   /* overflow-y: auto; */
 }
@@ -145,4 +145,10 @@ path {
   margin-left: 1em;
   fill: white;
   height: 1.2em;
+}
+
+@media (width < 600px) {
+  .aside-section {
+    display: none;
+  }
 }
