@@ -19,7 +19,7 @@ nav>ul>li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1em;
+  padding: 0.8em 1em;
   /* border: 1px solid red; */
   border-radius: 3em 0 0 3em;
 }
@@ -37,6 +37,10 @@ nav>ul>li a {
   color: rgb(27, 0, 87);
 }
 
+.dashboard .name i svg path {
+  fill: rgb(27, 0, 87);
+}
+
 nav ul li:first-child :first-child svg {
   fill: rgb(27, 0, 87);
 }
@@ -49,6 +53,14 @@ nav ul li:first-child :first-child svg {
   gap: 1em;
   font-size: 1.1rem;
   color: white;
+}
+
+.name i svg {
+  display: block;
+}
+
+.name i svg path {
+  fill: white;
 }
 
 .name:hover {
@@ -129,7 +141,7 @@ path {
 }
 */
 
-svg {
+.icon svg {
   margin-left: 1em;
   fill: white;
   height: 1.2em;
