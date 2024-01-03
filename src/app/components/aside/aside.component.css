@@ -3,7 +3,8 @@
   background: rgb(27, 0, 87);
   height: 100vh;
   padding-top: 1em;
-  /* overflow-y: auto; */
+  padding-bottom: 80px;
+  overflow-y: auto;
 }
 
 .mobile {
