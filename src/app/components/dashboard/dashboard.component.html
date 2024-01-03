@@ -4,29 +4,58 @@
     </header>
     <section class="card-container">
         <div class="card">
-            <app-info-card [color]="'red'" [total]="'82'" [nameCard]="'Продажби'"></app-info-card>
+            <app-info-card [color]="'red'" [total]="'82'" [nameCard]="'Продажби'" [measure]="'бр.'"></app-info-card>
         </div>
         <div class="card">
-            <app-info-card [color]="'blue'" [total]="'26'" [nameCard]="'Поръчки от клиенти'"></app-info-card>
+            <app-info-card [color]="'blue'" [total]="'536,30'" [nameCard]="'Оборот'" [measure]="'лв.'"></app-info-card>
 
         </div>
         <div class="card">
-            <app-info-card [color]="'orange'" [total]="'536,30'" [nameCard]="'Оборот'"></app-info-card>
+            <app-info-card [color]="'orange'" [total]="'72,58'" [nameCard]="'Печалба'"
+                [measure]="'лв.'"></app-info-card>
         </div>
         <div class="card">
-            <app-info-card [color]="'gray'" [total]="'8542.25'" [nameCard]="'Сума в касите'"></app-info-card>
+            <app-info-card [color]="'gray'" [total]="'26'" [nameCard]="'Чакащи поръчки'"
+                [measure]="'бр.'"></app-info-card>
         </div>
         <div class="card">
-            <app-info-card [color]="'green'" [total]="'2598'" [nameCard]="'Стокова наличност'"></app-info-card>
+            <app-info-card [color]="'purple'" [total]="'5/458'" [nameCard]="'Доставки'"
+                [measure]="'бр./лв.'"></app-info-card>
         </div>
         <div class="card">
-            <app-info-card [color]="'purple'" [total]="'8954.81'" [nameCard]="'Месечен оборот'"></app-info-card>
+            <app-info-card [color]="'whiteblue'" [total]="'2/122'" [nameCard]="'Разходи'"
+                [measure]="'бр./лв.'"></app-info-card>
         </div>
         <div class="card">
-            <app-info-card [color]="'whiteblue'" [total]="'1124.1'" [nameCard]="'Натрупано ДДС'"></app-info-card>
+            <app-info-card [color]="'brown'" [total]="'15'" [nameCard]="'Брак'" [measure]="'лв.'"></app-info-card>
         </div>
         <div class="card">
-            <app-info-card [color]="'brown'" [total]="'4549.22'" [nameCard]="'Разход'"></app-info-card>
+            <app-info-card [color]="'green'" [total]="'89,38'" [nameCard]="'ДДС от продажби'"
+                [measure]="'лв.'"></app-info-card>
+        </div>
+        <div class="card">
+            <app-info-card [color]="'purple'" [total]="'96,66'" [nameCard]="'ДДС за прихващане'"
+                [measure]="'лв.'"></app-info-card>
+        </div>
+        <div class="card">
+            <app-info-card [color]="'red'" [total]="'-7,28'" [nameCard]="'ДДС за внасяне'"
+                [measure]="'лв.'"></app-info-card>
+        </div>
+        <div class="card">
+            <app-info-card [color]="'orangered'" [total]="'2356,25'" [nameCard]="'Суми в касите'"
+                [measure]="'лв.'"></app-info-card>
+        </div>
+        <div class="card">
+            <app-info-card [color]="'olivedrab'" [total]="'12850'" [nameCard]="'Суми в банките'"
+                [measure]="'лв.'"></app-info-card>
+        </div>
+        <div class="card">
+            <app-info-card [color]="'brown'" [total]="'15526,25'" [nameCard]="'Ст. наличност по ср. дост. цена без ДДС'"
+                [measure]="'лв.'"></app-info-card>
+        </div>
+        <div class="card">
+            <app-info-card [color]="'red'" [total]="'-825,60'" [nameCard]="'Салда на контрагенти'"
+                [measure]="'лв.'"></app-info-card>
         </div>
     </section>
     <section class="table">

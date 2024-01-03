@@ -149,6 +149,7 @@ path {
 
 @media (width < 600px) {
   .aside-section {
-    display: none;
+    /* display: none; */
+    width: 100vw;
   }
 }

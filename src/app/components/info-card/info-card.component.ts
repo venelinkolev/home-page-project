@@ -9,4 +9,5 @@ export class InfoCardComponent {
   @Input() color: string = '';
   @Input() total: string = '';
   @Input() nameCard: string = '';
+  @Input() measure: string = '';
 }
