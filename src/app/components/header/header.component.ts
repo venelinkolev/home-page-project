@@ -21,8 +21,10 @@ export class HeaderComponent {
   menuBtnHandler(): void {
     if (!this._currentState) {
       this.stateManagement.menuBtnState(true);
+      console.log(this._currentState);
     } else {
       this.stateManagement.menuBtnState(false);
+      console.log(this._currentState);
     }
   }
 }

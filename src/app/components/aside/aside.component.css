@@ -6,6 +6,14 @@
   /* overflow-y: auto; */
 }
 
+.mobile {
+  display: none;
+  width: 100vw;
+  background: rgb(27, 0, 87);
+  height: 100vh;
+  padding-top: 1em;
+}
+
 nav>ul>li {
   padding: 0.5em 0 0.5em 0.5em;
   /* border: 1px solid yellow; */
@@ -149,7 +157,10 @@ path {
 
 @media (width < 600px) {
   .aside-section {
-    /* display: none; */
-    width: 100vw;
+    display: none;
+  }
+
+  .mobile {
+    display: block;
   }
 }
