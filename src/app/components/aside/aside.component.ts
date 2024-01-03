@@ -1,4 +1,5 @@
 import { Component, ElementRef, Renderer2 } from '@angular/core';
+import { StateManagementService } from 'src/app/states/state-management.service';
 
 @Component({
   selector: 'app-aside',
@@ -7,8 +8,18 @@ import { Component, ElementRef, Renderer2 } from '@angular/core';
 })
 export class AsideComponent {
 
-  constructor(private renderer: Renderer2) {
+  menuBtnState!: boolean;
 
+  constructor(private renderer: Renderer2, private stateManagement: StateManagementService) {
+    stateManagement.menuBtnStatus$.subscribe(state => this.menuBtnState = state);
+  }
+
+  menuBtnHandler(): void {
+    if (!this.menuBtnState) {
+      this.stateManagement.menuBtnState(true);
+    } else {
+      this.stateManagement.menuBtnState(false);
+    }
   }
 
   openMenu(e: HTMLElement) {

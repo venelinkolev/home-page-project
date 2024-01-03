@@ -1,4 +1,4 @@
-<div class="aside-section">
+<div *ngIf="menuBtnState" class="aside-section">
   <nav>
     <ul>
       <li>
@@ -35,7 +35,7 @@
           </div>
         </div>
         <ul class="subMenu" style="display: none;">
-          <li><a routerLink="/dashboard">Продажби</a></li>
+          <li (click)="menuBtnHandler()"><a routerLink="/dashboard">Продажби</a></li>
           <li><a routerLink="/">Фактуриране</a></li>
           <li><a href="#">Изпълняване на поръки</a></li>
           <li><a href="#">Доставки</a></li>

@@ -18,13 +18,11 @@ export class HeaderComponent {
     stateManagement.menuBtnStatus$.subscribe(state => this._currentState = state);
   }
 
-  menuBtn(): void {
+  menuBtnHandler(): void {
     if (!this._currentState) {
       this.stateManagement.menuBtnState(true);
-      console.log(this._currentState);
     } else {
       this.stateManagement.menuBtnState(false);
-      console.log(this._currentState);
     }
   }
 }

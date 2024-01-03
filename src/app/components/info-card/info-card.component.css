@@ -56,6 +56,13 @@
 @media (width < 600px) {
     .container {
         width: 90vw;
-        height: 90px;
+        height: 110px;
+        padding: 0.7em 1.2em;
+    }
+
+    .measure {
+        top: 25px;
+        right: 25px;
+        font-weight: 700;
     }
 }
