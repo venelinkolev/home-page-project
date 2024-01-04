@@ -9,9 +9,13 @@
     display: flex;
     padding: 1em 4em;
     justify-content: space-between;
+    align-items: center;
     background-color: var(--primary-color);
-    /* border-bottom: 2px solid white; */
-    /* box-shadow: 0 0 1em 0 rgb(255, 255, 255); */
+}
+
+.login-header__logo {
+    display: block;
+    color: white;
 }
 
 .login-header__nav li {
@@ -45,9 +49,10 @@
     flex: 1 0 auto;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 5px 10px 0 rgba(255, 255, 255, 0.3) inset;
 }
 
-.form-container {
+.container-login__form {
     display: flex;
     justify-content: space-between;
     background-color: rgb(192, 192, 192, 0.3);
@@ -55,4 +60,17 @@
     height: 75%;
     border-radius: 1em;
     box-shadow: 0 0 1em 0 rgb(255, 255, 255);
+}
+
+.container-login__form--banner {
+    flex-basis: 60%;
+}
+
+.container-login__form form {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
 }
