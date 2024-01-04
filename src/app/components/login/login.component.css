@@ -79,7 +79,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 2em;
-    margin-top: 4em;
+    margin-top: 3em;
 }
 
 .container-login__form--form header h1 {
@@ -99,7 +99,7 @@
 .container-login__form--form form {
     display: flex;
     flex-direction: column;
-    padding: 2em;
+    padding: 2em 2em 0 2em;
 }
 
 .container-login__form--form label {
@@ -130,4 +130,15 @@
 .container-login__form--form input[type='submit']:hover {
     cursor: pointer;
     background-color: rgb(219, 0, 0);
+}
+
+.container-login__form--remember {
+    color: white;
+    display: flex;
+    margin-left: 2em;
+}
+
+.container-login__form--remember input {
+    zoom: 1.5;
+    margin-right: 5px;
 }
