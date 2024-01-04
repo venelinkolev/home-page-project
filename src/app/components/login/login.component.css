@@ -1,7 +1,8 @@
 .login {
     width: 100vw;
     height: 100vh;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .login-header {
@@ -9,11 +10,30 @@
     padding: 1em 4em;
     justify-content: space-between;
     background-color: var(--primary-color);
+    /* border-bottom: 2px solid white; */
+    /* box-shadow: 0 0 1em 0 rgb(255, 255, 255); */
 }
 
 .login-header__nav li {
     display: inline-block;
-    padding: 2;
+    margin-left: 3em;
+}
+
+.login-header__nav a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    transition: color 0.3s ease-in-out;
+}
+
+.login-header__nav a:hover {
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.button-shop {
+    padding: 0.5em 1em;
+    background-color: red;
+    border-radius: 0.5em;
 }
 
 .container-login {
@@ -22,6 +42,7 @@
             rgb(67, 67, 198) 70%,
             rgb(96, 96, 230) 100%);
     display: flex;
+    flex: 1 0 auto;
     justify-content: center;
     align-items: center;
 }
