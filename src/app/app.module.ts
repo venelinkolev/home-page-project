@@ -11,6 +11,7 @@ import { MainTableComponent } from './components/main-table/main-table.component
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ChartsModule } from './components/charts/charts.module';
 import { MatTableModule } from '@angular/material/table';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { MatTableModule } from '@angular/material/table';
     DashboardComponent,
     InfoCardComponent,
     MainTableComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
