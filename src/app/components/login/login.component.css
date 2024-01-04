@@ -63,14 +63,25 @@
 }
 
 .container-login__form--banner {
-    flex-basis: 50%;
-    background-color: blue;
+    flex: 1 1 50%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.container-login__form--banner img {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .container-login__form--form {
     display: flex;
     flex-direction: column;
-    flex-basis: 50%;
+    flex: 1 1 40%;
     height: 100%;
 }
 
@@ -79,7 +90,7 @@
     justify-content: space-between;
     align-items: center;
     margin: 0 2em;
-    margin-top: 3em;
+    margin-top: 2.5em;
 }
 
 .container-login__form--form header h1 {
@@ -117,6 +128,7 @@
     margin-bottom: 1.5em;
     border-radius: 3em;
     color: var(--primary-color);
+    font-size: 1.1em;
 }
 
 .container-login__form--form input[type='submit'] {
