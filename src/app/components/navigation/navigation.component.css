@@ -1,0 +1,100 @@
+nav>ul>li {
+    padding: 0.5em 0 0.5em 0.5em;
+    /* border: 1px solid yellow; */
+}
+
+nav>ul>li a {
+    padding-right: 1em;
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8em 1em;
+    /* border: 1px solid red; */
+    border-radius: 3em 0 0 3em;
+}
+
+/* nav ul li:first-child :nth-child(1) {
+    background-color: white;
+    color: rgb(27, 0, 87);
+  } */
+
+.dashboard {
+    background-color: white;
+}
+
+.dashboard .name {
+    color: rgb(27, 0, 87);
+}
+
+.dashboard .name i svg path {
+    fill: rgb(27, 0, 87);
+}
+
+nav ul li:first-child :first-child svg {
+    fill: rgb(27, 0, 87);
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    flex: wrap;
+    flex-basis: 80%;
+    gap: 1em;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.name i svg {
+    display: block;
+}
+
+.name i svg path {
+    fill: white;
+}
+
+.name:hover {
+    cursor: pointer;
+}
+
+.caret-down {
+    display: block;
+}
+
+.caret-up {
+    display: none;
+}
+
+.subMenu li,
+.subMenu a {
+    display: block;
+}
+
+.subMenu {
+    margin-left: 3em;
+}
+
+.subMenu li {
+    padding: 0.5em 0 0.5em 0.5em;
+}
+
+.subMenu a {
+    text-decoration: none;
+    color: rgb(255, 255, 255, 0.4);
+}
+
+.subMenu a:focus {
+    color: white;
+}
+
+.subMenu a:hover {
+    color: white;
+}
+
+.icon svg {
+    margin-left: 1em;
+    fill: white;
+    height: 1.2em;
+}
