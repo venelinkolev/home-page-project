@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { LoginComponent } from './components/login/login.component';
+import { MainPageComponent } from './components/main-page/main-page.component';
 
 const routes: Routes = [
   {
@@ -15,20 +16,16 @@ const routes: Routes = [
     component: LoginComponent,
   },
   {
-    path: 'dashboard',
-    title: 'Dashboard',
-    component: DashboardComponent,
+    path: 'page',
+    title: 'Page',
+    component: MainPageComponent,
+    children: [
+      {
+        path: 'main',
+        loadChildren: () => import('./components/main-page/main-page.module').then(m => m.MainPageModule)
+      }
+    ],
   },
-  // {
-  //   path: 'login',
-  //   title: 'Login',
-  //   component: LoginComponent,
-  //   children: [
-  //     {
-  //       // loadChildren: () => import('').then(m => m.);
-  //     },
-  //   ],
-  // }
 ];
 
 @NgModule({
