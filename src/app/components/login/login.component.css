@@ -184,6 +184,7 @@
         flex-direction: column;
         width: 80%;
         height: auto;
+        margin: 5em 0;
     }
 
     .container-login__form--banner img {}
