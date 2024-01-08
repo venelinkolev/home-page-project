@@ -14,8 +14,30 @@
 }
 
 .login-header__logo {
-    display: block;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
     color: white;
+}
+
+.icon {
+    display: none;
+}
+
+.icon svg {
+    display: block;
+    margin-left: 1em;
+    fill: white;
+    height: 2em;
+}
+
+.caret-down {
+    display: block;
+}
+
+.caret-up {
+    display: none;
 }
 
 .login-header__nav li {
@@ -163,10 +185,19 @@
 
     .login-header {
         flex-direction: column;
+        padding: 1em 2.5em;
+    }
+
+    .icon {
+        display: block;
     }
 
     .login-header__logo {
         padding: 1em 0;
+    }
+
+    .login-header__nav {
+        display: none;
     }
 
     .login-header__nav ul {
@@ -187,11 +218,7 @@
         margin: 5em 0;
     }
 
-    .container-login__form--banner img {}
-
     .container-login__form--banner {
         display: none;
     }
-
-    .container-login__form--form {}
 }
