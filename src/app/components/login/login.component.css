@@ -15,7 +15,6 @@
 
 .login-header__logo {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: flex-end;
     color: white;
@@ -194,6 +193,7 @@
 
     .login-header__logo {
         padding: 1em 0;
+        width: 100%;
     }
 
     .login-header__nav {
