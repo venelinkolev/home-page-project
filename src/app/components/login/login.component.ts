@@ -11,9 +11,9 @@ export class LoginComponent {
 
   openSubMenu(e: HTMLElement) {
     const loginHeaderElement = e.parentElement?.parentElement;
-    console.log(loginHeaderElement);
+    // console.log(loginHeaderElement);
     const navHeaderElement = loginHeaderElement?.children[1];
-    console.log(navHeaderElement);
+    // console.log(navHeaderElement);
     if (e?.children[0].className == 'caret-down') {
       // console.log('Down');
       this.renderer.removeClass(e.children[0], 'caret-down');
