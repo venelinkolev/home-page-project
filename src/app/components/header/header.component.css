@@ -18,7 +18,7 @@
 }
 
 .logo h2 {
-  color: rgb(27, 0, 87);
+  color: var(--primary-color);
 }
 
 .nav-bar {
@@ -37,7 +37,7 @@
 
 .nav-bar a {
   text-decoration: none;
-  color: rgb(27, 0, 87);
+  color: var(--primary-color);
   margin: 1em;
   font-size: 1.2rem;
   line-height: 0.9em;
@@ -48,7 +48,7 @@
 }
 
 .nav-bar a:hover {
-  border-color: rgb(27, 0, 87);
+  border-color: var(--primary-color);
 }
 
 .profil {
@@ -57,7 +57,7 @@
 }
 
 .profil svg:hover {
-  border-color: rgb(27, 0, 87);
+  border-color: var(--primary-color);
 }
 
 .profil span {
@@ -66,7 +66,7 @@
 
 .profil svg {
   cursor: pointer;
-  fill: rgb(27, 0, 87);
+  fill: var(--primary-color);
   height: 2.2em;
   border: 2px solid white;
   border-radius: 50%;
@@ -85,7 +85,7 @@
 }
 
 .mobile-menu i svg {
-  fill: rgb(27, 0, 87);
+  fill: var(--primary-color);
 }
 
 @media (width < 600px) {

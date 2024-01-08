@@ -1,6 +1,6 @@
 .aside-section {
   width: 18em;
-  background: rgb(27, 0, 87);
+  background: var(--primary-color);
   height: 100vh;
   padding-top: 1em;
   padding-bottom: 80px;
@@ -10,7 +10,7 @@
 .mobile {
   display: none;
   width: 100vw;
-  background: rgb(27, 0, 87);
+  background: var(--primary-color);
   height: 100vh;
   padding-top: 1em;
 }
@@ -43,15 +43,15 @@ nav>ul>li a {
 }
 
 .dashboard .name {
-  color: rgb(27, 0, 87);
+  color: var(--primary-color);
 }
 
 .dashboard .name i svg path {
-  fill: rgb(27, 0, 87);
+  fill: var(--primary-color);
 }
 
 nav ul li:first-child :first-child svg {
-  fill: rgb(27, 0, 87);
+  fill: var(--primary-color);
 }
 
 .name {
